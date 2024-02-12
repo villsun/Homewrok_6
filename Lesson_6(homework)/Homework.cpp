@@ -43,7 +43,7 @@ struct Animal
 	char alias_animal[50];
 };
 
-void Fill_structure(Animal& animal, const char* name_animal, const char* class_animal, const char* alias_animal)
+void Fill_Structure(Animal& animal, const char* name_animal, const char* class_animal, const char* alias_animal)
 {
 	strcpy(animal.name_animal, name_animal);
 	strcpy(animal.class_animal, class_animal);
