@@ -50,6 +50,13 @@ void Fill_Structure(Animal& animal, const char* name_animal, const char* class_a
 	strcpy(animal.alias_animal, alias_animal);
 }
 
+void Show_Structure(const Animal& animal)
+{
+	cout << "Name = " << animal.name_animal << endl;
+	cout << "Class = " << animal.class_animal << endl;
+	cout << "Alias = " << animal.alias_animal << endl;
+}
+
 int main()
 {
 	// Завдання 1
@@ -109,6 +116,7 @@ int main()
 	cout << "Power = " << boiler_1.power << endl;
 	cout << "Amount = " << boiler_1.amount << endl;
 	cout << "Heating temperature = " << boiler_1.heating_temperature << endl;*/
+
 
 	return 0;
 }
