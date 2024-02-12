@@ -27,11 +27,20 @@ struct Iron
 	double power;
 };
 
+struct Boiler
+{
+	char brand[30];
+	char color[15];
+	double power;
+	double amount;
+	double heating_temperature;
+};
+
 int main()
 {
 	// Завдання 1
 
-	/*Washing_Machine washing_machine_1;
+	Washing_Machine washing_machine_1;
 
 	strcpy(washing_machine_1.brand, "Samsung");
 	strcpy(washing_machine_1.color, "white");
@@ -49,7 +58,7 @@ int main()
 	cout << "Height = " << washing_machine_1.height << endl;
 	cout << "Power = " << washing_machine_1.power << endl;
 	cout << "Spin speed = " << washing_machine_1.spin_speed << endl;
-	cout << "Heating temperature = " << washing_machine_1.heating_temperature << endl;*/
+	cout << "Heating temperature = " << washing_machine_1.heating_temperature << endl;
 
 	// Завдання 2
 
@@ -70,6 +79,24 @@ int main()
 	cout << "Maximum temperature = " << iron_1.max_temperature << endl;
 	cout << "Steam supply = " << iron_1.steam_supply << endl;
 	cout << "Power = " << iron_1.power << endl;
+
+	// Завдання 3
+
+	Boiler boiler_1;
+
+	strcpy(boiler_1.brand, "HP");
+	strcpy(boiler_1.color, "lime");
+	boiler_1.power = 55.5;
+	boiler_1.amount = 40.5;
+	boiler_1.heating_temperature = 35.5;
+
+	cout << "Brand = " << boiler_1.brand << endl;
+	cout << "Color = " << boiler_1.color << endl;
+	cout << "Power = " << boiler_1.power << endl;
+	cout << "Amount = " << boiler_1.amount << endl;
+	cout << "Heating temperature = " << boiler_1.heating_temperature << endl;
+
+
 
 	return 0;
 }
