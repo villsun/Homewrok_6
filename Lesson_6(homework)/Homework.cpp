@@ -57,6 +57,37 @@ void Show_Structure(const Animal& animal)
 	cout << "Alias = " << animal.alias_animal << endl;
 }
 
+void Voice_of_Animal(Animal& animal)
+{
+	char animal_type[50];
+	strcpy(animal_type, _strlwr(animal.name_animal));
+
+	if (strcmp(animal_type, "dog") == 0)
+	{
+		cout << "Woof Woof Woof!\n";
+	}
+	else if (strcmp(animal_type, "cat") == 0)
+	{
+		cout << "Meow Meow Meow!\n";
+	}
+	else if (strcmp(animal_type, "duck") == 0)
+	{
+		cout << "So So So So So So So So So Son!\n";
+	}
+	else if (strcmp(animal_type, "frog") == 0)
+	{
+		cout << "Quack Quack!\n";
+	}
+	else if (strcmp(animal_type, "cow") == 0)
+	{
+		cout << "Muu Muu Muu!\n";
+	}
+	else
+	{
+		cout << "Not in the database!\n";
+	}
+}
+
 int main()
 {
 	// Завдання 1
@@ -116,6 +147,13 @@ int main()
 	cout << "Power = " << boiler_1.power << endl;
 	cout << "Amount = " << boiler_1.amount << endl;
 	cout << "Heating temperature = " << boiler_1.heating_temperature << endl;*/
+
+	Animal animal_1;
+
+	Fill_Structure(animal_1, "sdff", "Mammals", "Big boss");
+	Show_Structure(animal_1);
+
+	Voice_of_Animal(animal_1);
 
 
 	return 0;
